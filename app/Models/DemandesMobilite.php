@@ -10,6 +10,7 @@ class DemandesMobilite extends Model {
 
     protected $primaryKey = 'codeDemandeM';
     protected $table = 'demandesMobilites';
+    public $timestamps = false;
 
     protected $fillable = [
         "codeDemandeM",

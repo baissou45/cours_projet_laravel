@@ -9,6 +9,7 @@ class Diplome extends Model {
     use HasFactory;
 
     protected $primaryKey = 'codeDiplome';
+    public $timestamps = false;
 
     protected $fillable = [
         "codeDiplome",
@@ -18,7 +19,7 @@ class Diplome extends Model {
     ];
 
 
-    public function univerrsite() {
+    public function universite() {
         return $this->belongsTo(Universite::class, 'codeU', 'codeU');
     }
 

@@ -9,7 +9,7 @@ class Programme extends Model {
     use HasFactory;
 
     protected $primaryKey = 'codeProgramme';
-
+    public $timestamps = false; 
     protected $fillable = [
         "codeProgramme",
         "nomProgramme",

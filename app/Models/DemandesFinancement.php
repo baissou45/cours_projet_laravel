@@ -9,7 +9,7 @@ class DemandesFinancement extends Model {
     use HasFactory;
 
     protected $primaryKey = 'codeDemandeF';
-
+    public $timestamps = false; 
     protected $fillable = [
         "codeDemandeF",
         "dateDepotDemandeF",

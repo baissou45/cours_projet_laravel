@@ -9,7 +9,7 @@ class Contrat extends Model {
     use HasFactory;
 
     protected $primaryKey = 'codeContrat';
-
+    public $timestamps = false; 
     protected $fillable = [
         "codeContrat",
         "dureeContrat",

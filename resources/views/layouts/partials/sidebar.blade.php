@@ -21,18 +21,29 @@
                 </li>
 
                 {{-- Utilisateurs --}}
-                <li class="menu-title">Utilisateurs</li>
+                {{-- <li class="menu-title">Utilisateurs</li> --}}
 
-                {{-- <li class="has_sub">
+                <li class="has_sub">
                     <a href="javascript:void(0);" class="waves-effect">
-                        <i class="dripicons-user-group"></i>
-                        <span> Produits <span class="float-right"><i class="mdi mdi-chevron-right"></i></span> </span>
+                        <i class="dripicons-user"></i>
+                        <span> Diplômes <span class="float-right"><i class="mdi mdi-chevron-right"></i></span> </span>
                     </a>
                     <ul class="list-unstyled">
-                        <li><a href="#">Liste des produits</a></li>
-                        <li><a href="#">Nouveau produit</a></li>
+                        <li><a href="{{ route('diplomes.index') }}">Liste des diplômes</a></li>
+                        <li><a href="{{ route('diplomes.create') }}">Nouveau diplôme</a></li>
                     </ul>
-                </li> --}}
+                </li>
+
+                <li class="has_sub">
+                    <a href="javascript:void(0);" class="waves-effect">
+                        <i class="dripicons-user"></i>
+                        <span> Programmes <span class="float-right"><i class="mdi mdi-chevron-right"></i></span> </span>
+                    </a>
+                    <ul class="list-unstyled">
+                        <li><a href="{{ route('programmes.index') }}">Liste des programmes</a></li>
+                        <li><a href="{{ route('programmes.create') }}">Nouveau programme</a></li>
+                    </ul>
+                </li>
 
             </ul>
         </div>
